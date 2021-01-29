@@ -1,0 +1,12 @@
+ns fileName.tcl
+nam out.nam
+awk -f fileName.awk out.tr
+
+#out.nam and out.tr is the file specified/created in .tcl file
+
+#to install xgraph
+sudo apt install perl libxt-dev libx11-dev libxmu-dev
+wget http://archive.ubuntu.com/ubuntu/pool/universe/x/xgraph/xgraph_12.1-17_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/main/libx/libx11/libx11-6_1.6.4-3ubuntu0.2_amd64.deb
+sudo dpkg -i *.deb
+
